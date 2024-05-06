@@ -7,7 +7,7 @@ import Transactions from "./components/transactions";
 import Accounts from "./components/accounts";
 
 const App = () => {
-  const theme = ""
+  const theme = "dark";
   return <main className={theme}>
     <div className="w-full px-6 md:px-20 bg-white dark:bg-slate-900">
       <Navbar/>
