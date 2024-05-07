@@ -5,9 +5,10 @@ import Chart from "./components/chart";
 import DoughnutChart from "./components/doughnutchart";
 import Transactions from "./components/transactions";
 import Accounts from "./components/accounts";
+import { useStore } from "./store";
 
 const App = () => {
-  const theme = "dark";
+  const theme = useStore((state) => state.theme);
   return <main className={theme}>
     <div className="w-full px-6 md:px-20 bg-white dark:bg-slate-900">
       <Navbar/>
